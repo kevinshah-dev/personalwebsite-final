@@ -77,9 +77,74 @@ return (
                                             </Button>
                                         </a>
                                     </HStack>
+                                    <HStack pt={4} spacing={2}>
+                                        <Badge 
+                                            key="Javascript"
+                                            colorScheme="blue"
+                                        >
+                                            Javascript
+                                        </Badge>
+                                        <Badge
+                                            key="React"
+                                            colorScheme="blue"
+                                        >
+                                            React
+                                        </Badge>
+                                        <Badge
+                                            key="API"
+                                            colorScheme="blue"                                        
+                                        >
+                                            API
+                                        </Badge>
+                                        <Badge
+                                            key="MaterialUI"
+                                            colorScheme="blue"                                        
+                                        >
+                                            MaterialUI
+                                        </Badge>
+                                    </HStack>
                                 </CardBody>
                             </Stack>
 
+                        </Card>
+                    </Fade>
+                    <Fade bottom>
+                        <Card
+                            key="Fantasy Football Point Predictor"
+                            direction={{
+                                base: "column"
+                            }}
+                            overflow="hidden"
+                        >
+                            <Image objectFit="cover" src="https://i.imgur.com/CWB4fr6.png" />
+                            <Stack>
+                                <CardBody align="left">
+                                    <Heading size="md">NFL Fantasy Point Predictor Project</Heading>
+
+                                    <Text py={2}>Along with my project team, I developed a machine learning model that predicts the fantasy point totals for the top 300 players in the 2021-2022 NFL Season. Check out our work by looking through InitialModel.ipynb in the Github repository.</Text>
+                                    <HStack py={2}>
+                                        <a key="Github" href="https://github.com/kevinshah-dev/Predicting-Fantasy-Football-Output">
+                                            <Button color="blue.400">
+                                                Github
+                                            </Button>
+                                        </a>
+                                    </HStack>
+                                    <HStack pt={4} spacing={2}>
+                                        <Badge
+                                            key="Python"
+                                            colorScheme="blue"
+                                        >
+                                            Python
+                                        </Badge>
+                                        <Badge
+                                            key="Machine Learning"
+                                            colorScheme="blue"
+                                        >
+                                            Machine Learning
+                                        </Badge>
+                                    </HStack>
+                                </CardBody>
+                            </Stack>
                         </Card>
                     </Fade>
 
