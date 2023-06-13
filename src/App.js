@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navigation/>
       <Header/>
+      <Experience/>
       <Projects/>
     </>
   );
