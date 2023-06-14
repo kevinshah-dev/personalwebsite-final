@@ -23,7 +23,7 @@ import { useState } from "react";
 
 export default function Projects() {
 
-    const [selected, setSelected] = useState("All");
+    const [selected, setSelected] = useState("Data Science");
 
     const handleSelected = (value) => {
         setSelected(value);
@@ -152,6 +152,51 @@ return (
 
 
             </Stack>
+            <Text color="gray.600" fontSize="xl" px={4} align="center">
+                Other Projects
+            </Text>
+            <Center px={4}>
+                <ButtonGroup variant="outline">
+                    <Button
+                        colorScheme={selected === "Data Science" ? "blue" : "gray"}
+                        onClick={() => handleSelected("Data Science")}
+                    >
+                        Data Science
+                    </Button>
+                    <Button
+                        colorScheme={selected === "Other" ? "blue" : "gray"}
+                        onClick={() => handleSelected("Other")}
+                    >
+                        Other
+                    </Button>
+                </ButtonGroup>
+            </Center>
+            <SimpleGrid columns={[1,2,3]} px={4} spacing={4}>
+                {selected === "Data Science" &&
+                    <Fade bottom>
+                        <Card key="Python Keras">
+                            <Stack>
+                                <CardBody align="left" h={[null, "40vh"]}>
+                                    <Heading size="sm">Stock Price Prediction with Keras</Heading>
+                                    <Text fontSize="sm" py={2}>
+                                    Used the Keras interface for TensorFlow to create an LSTM neural network to predict prices for a portfolio of ten stocks. 
+                                    </Text>
+                                    <HStack spacing={2}>
+                                        <Link
+                                            key="Github"
+                                            href="https://github.com/kevinshah-dev/Stock-Price-Prediction-with-Keras"
+                                            color="blue.400"
+                                        >
+                                            Github
+                                        </Link>
+                                    </HStack>
+                                </CardBody>
+                            </Stack>
+                        </Card>
+                    </Fade>
+                }
+
+            </SimpleGrid>
         </Container>
         
         
