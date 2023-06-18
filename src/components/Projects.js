@@ -152,11 +152,11 @@ return (
 
 
             </Stack>
-            <Text color="gray.600" fontSize="xl" px={4} align="center">
+            <Text color="gray.600" fontSize="xl" px={4} py={5} align="center">
                 Other Projects
             </Text>
             <Center px={4}>
-                <ButtonGroup variant="outline">
+                <ButtonGroup variant="outline" py={6}>
                     <Button
                         colorScheme={selected === "Data Science" ? "blue" : "gray"}
                         onClick={() => handleSelected("Data Science")}
@@ -173,6 +173,7 @@ return (
             </Center>
             <SimpleGrid columns={[1,2,3]} px={4} spacing={4}>
                 {selected === "Data Science" &&
+                <>
                     <Fade bottom>
                         <Card key="Python Keras">
                             <Stack>
@@ -185,6 +186,51 @@ return (
                                         <Link
                                             key="Github"
                                             href="https://github.com/kevinshah-dev/Stock-Price-Prediction-with-Keras"
+                                            color="blue.400"
+                                        >
+                                            Github
+                                        </Link>
+                                    </HStack>
+                                </CardBody>
+                            </Stack>
+                        </Card>
+                    </Fade>
+                    <Fade bottom>
+                        <Card key="Himalayan">
+                            <Stack>
+                                <CardBody align="left" h={[null, "40vh"]}>
+                                    <Heading size="sm">Himalayan Climbing Expeditions</Heading>
+                                    <Text fontSize="sm" py={2}>
+                                    Analyzed a dataset of Himalayan climbs using R with group members. We aimed to find what factors (year, season, age, number of members, etc) in an expedition affected its success.
+                                    </Text>
+                                    <HStack>
+                                        <Link
+                                            key="Github"
+                                            href="https://github.com/kevinshah-dev/Himalayan-Climbing/tree/main"
+                                            color="blue.400"
+                                        >
+                                            Github
+                                        </Link>
+                                    </HStack>
+                                </CardBody>
+                            </Stack>
+                        </Card>
+                    </Fade>
+                </>
+                }
+                {selected === "Other" &&
+                    <Fade bottom>
+                        <Card key="Verilog">
+                            <Stack>
+                                <CardBody align="left" h={[null, "40vh"]}>
+                                    <Heading size="sm">32-Bit ALU and Multiplier/Divider</Heading>
+                                    <Text fontSize="sm" py={2}>
+                                    Created an ALU and Multiplier/Divider Unit using structural Verilog (gate-level design).
+                                    </Text>
+                                    <HStack spacing={2}>
+                                        <Link
+                                            key="Github"
+                                            href="https://github.com/kevinshah-dev/32BitALUandMultDiv"
                                             color="blue.400"
                                         >
                                             Github
