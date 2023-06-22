@@ -10,6 +10,8 @@ import {
     createIcon,
 } from "@chakra-ui/react";
 
+import { BsPinMapFill } from "react-icons/bs";
+
 
 export default function Header() {
     const scrollToContact = () => {
@@ -50,12 +52,13 @@ export default function Header() {
                         <Text as={"span"} color={"blue.400"}>
                             Full-Stack Software Engineer
                         </Text>
-                    </Heading>
+                    </Heading> 
                     <Text
                         color={"gray.500"}
                         fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
                     >
-                        Testing                        
+                        <Icon as={BsPinMapFill}/>
+                         Durham, NC                       
 
                     </Text>
                     <Stack

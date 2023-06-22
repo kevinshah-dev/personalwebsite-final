@@ -30,7 +30,11 @@ export default function() {
                         Hi I'm Kevin! I'm a software engineer with a lifelong interest in writing code, developing interesting applications, and making the world a better place with technology.
                     </Text>
                     <Text color={"gray.400"} fontSize={"xl"} px={4}>
-                    I'm currently studying at Duke University as a Computer Science major, and will be graduating in December 2023. When I'm not in front of a computer, you can find me outside (usually hiking or playing pick-up basketball). Scroll down to see some of the places I've worked and projects I've developed!
+                    I'm currently studying at Duke University as a Computer Science major, and will be graduating in December 2023. When I'm not in front of a computer, you can find me outside (usually hiking or playing pick-up basketball).
+
+                    </Text>
+                    <Text color={"gray.400"} fontSize={"xl"} px={4}>
+                     Scroll down to see some of the places I've worked and projects I've developed!
 
                     </Text>
                 </Stack>
