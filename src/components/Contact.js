@@ -32,7 +32,7 @@ export default function Contact() {
         >
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text color={"blue.400"} fontWeight={800}>
                 04
               </Text>
               <Text fontWeight={800}>Contact</Text>
@@ -41,7 +41,7 @@ export default function Contact() {
           </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
-            <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
+            <Text color={"blue.500"} fontWeight={600} fontSize={"lg"} px={4}>
               ks539@duke.edu
             </Text>
             <Center>
