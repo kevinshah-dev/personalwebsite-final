@@ -99,7 +99,15 @@ export default function Experience() {
                                                     as={ChevronRightIcon}
                                                     color="blue.400"
                                                 />
-                                                Pursuing a Fall Internship on the Front-End Team
+                                                Leveraged TypeScript and React to build the web-based Planning & Scheduling module of the Prometheus Platform, which is an Enterprise Asset Management tool used by over 50,000 people across our client base
+                                            </ListItem>
+                                            <ListItem key="Point 1">
+                                                <ListIcon
+                                                    boxSize={6}
+                                                    as={ChevronRightIcon}
+                                                    color="blue.400"
+                                                />
+                                                Implemented RTL (right-to-left) support for the Planning & Scheduling module, allowing languages like Arabic and Hebrew to be displayed, which assisted in Prometheus gaining several new clients in the EMEA region
                                             </ListItem>
                                         </List>
                                     </Flex>
