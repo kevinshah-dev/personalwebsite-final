@@ -18,7 +18,7 @@ export default function Contact() {
         window.open("https://github.com/kevinshah-dev", "_blank", "noreferrer,noopener");
     };
     const email = () => {
-        window.open("ks539@duke.edu", "_blank", "noreferrer,noopener");
+        window.open("shahkevinh@gmail.com", "_blank", "noreferrer,noopener");
     }
 
     return (
@@ -42,7 +42,7 @@ export default function Contact() {
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
             <Text color={"blue.500"} fontWeight={600} fontSize={"lg"} px={4}>
-              ks539@duke.edu
+              shahkevinh@gmail.com
             </Text>
             <Center>
               <HStack pt={4} spacing={4}>
