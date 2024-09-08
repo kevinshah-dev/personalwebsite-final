@@ -58,7 +58,7 @@ export default function Header() {
                         fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
                     >
                         <Icon as={BsPinMapFill}/>
-                         Durham, NC                       
+                         USA                      
 
                     </Text>
                     <Stack
