@@ -48,6 +48,66 @@ return (
                     <Divider orientation="horizontal" />
                 </Stack>
                 <Stack px={4} spacing={4}>
+                <Fade bottom>
+                        <Card
+                            key="PokerGPT"
+                            direction={{
+                                base: "column",
+                            }}
+                            overflow="hidden"
+                        >
+                            <Image objectFit="cover" src='https://i.imgur.com/edIXnHw.png'/>
+                            <Stack>
+                                <CardBody align = "left">
+                                    <Heading size="md">PokerGPT</Heading>
+
+                                    <Text py={2}>
+                                    Using the OpenAI GPT-4 API, I built a website that analyzes a poker position and recommends how to play optimally using pot size, community cards, bet sizes, position, and the players cards.
+                                    
+                                    </Text>
+                                    <HStack py={2}>
+                                        <a key="Github" href="https://github.com/kevinshah-dev/pokergpt">
+                                            <Button color="blue.400">
+                                                Github
+                                            </Button>
+                                        </a>
+                                        <a key="Link" href="https://pokergpt-wine.vercel.app">
+                                            <Button color="blue.400">
+                                                Website Link
+                                            </Button>
+                                        </a>
+                                    </HStack>
+                                    <HStack pt={4} spacing={2}>
+                                        <Badge 
+                                            key="Javascript"
+                                            colorScheme="blue"
+                                        >
+                                            GPT-4
+                                        </Badge>
+                                        <Badge
+                                            key="React"
+                                            colorScheme="blue"
+                                        >
+                                            Next.js
+                                        </Badge>
+                                        <Badge
+                                            key="API"
+                                            colorScheme="blue"                                        
+                                        >
+                                            API
+                                        </Badge>
+                                        <Badge
+                                            key="MaterialUI"
+                                            colorScheme="blue"                                        
+                                        >
+                                            TailwindCSS
+                                        </Badge>
+                                    </HStack>
+                                </CardBody>
+                            </Stack>
+
+                        </Card>
+                    </Fade>
                     <Fade bottom>
                         <Card
                             key="Multimedia Hub"
