@@ -56,7 +56,7 @@ return (
                             }}
                             overflow="hidden"
                         >
-                            <Image objectFit="cover" src='https://i.imgur.com/edIXnHw.png'/>
+                            <Image objectFit="cover" src='blob:https://imgur.com/c209bfee-51a3-411a-b28f-5933711c7b24'/>
                             <Stack>
                                 <CardBody align = "left">
                                     <Heading size="md">PokerGPT</Heading>
