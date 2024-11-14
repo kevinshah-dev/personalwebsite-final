@@ -71,10 +71,87 @@ export default function Experience() {
                             >
                                 Experience #3
                             </Button>
+                            <Button
+                                colorScheme={selected === "Experience #4" ? "blue" : "gray"}
+                                onClick={() => handleSelected("Experience #4")}
+                            >
+                                Experience #4
+                            </Button>
                     </ButtonGroup>
                 </Center>
                 <Stack px={4} py={5} spacing={4}>
-                    {selected === "Experience #1" && 
+                {selected === "Experience #1" && 
+                        <Fade bottom>
+                            <Card key="Prometheus Group" size="sm">
+                                <CardHeader>
+                                    <Flex justifyContent="space-between">
+                                        <HStack>
+                                            <Box px={2} align="left">
+                                                <Text fontWeight={600}>Prometheus Group</Text>
+                                                <i>Associate Developer</i>
+                                            </Box>
+                                        </HStack>
+                                        <Text px={2} fontWeight={300}>
+                                            January 2024 - Present
+                                        </Text>
+                                    </Flex>
+                                </CardHeader>
+                                <CardBody>
+                                    <Flex>
+                                        <List align="left" spacing={3}>
+                                            <ListItem key="Point 1">
+                                                <ListIcon
+                                                    boxSize={6}
+                                                    as={ChevronRightIcon}
+                                                    color="blue.400"
+                                                />
+                                                Leveraged TypeScript and React to build the web-based Planning & Scheduling module of the Prometheus Platform, which is an Enterprise Asset Management tool used by over 50,000 people across our client base
+                                            </ListItem>
+                                            <ListItem key="Point 1">
+                                                <ListIcon
+                                                    boxSize={6}
+                                                    as={ChevronRightIcon}
+                                                    color="blue.400"
+                                                />
+                                                Collaborated with ABAP developers to implement new API endpoints and backend mappings using Java, allowing seamless integration of client SAP data within the Prometheus Platform through our Spring Boot backend
+                                            </ListItem>
+                                            <ListItem key="Point 1">
+                                                <ListIcon
+                                                    boxSize={6}
+                                                    as={ChevronRightIcon}
+                                                    color="blue.400"
+                                                />
+                                                Led the development of a custom date formatting microservice to replace Moment.js, reducing technical debt and optimizing SAP date/time field handling
+                                            </ListItem>
+                                        </List>
+                                    </Flex>
+                                </CardBody>
+                                <CardFooter>
+                                    <HStack spacing={2}>
+                                        <Badge
+                                            key="Javascript"
+                                            colorScheme="blue"
+                                        >
+                                            Javascript
+                                        </Badge>
+                                        <Badge
+                                            key="Typescript"
+                                            colorScheme="blue"
+                                        >
+                                            Typescript
+                                        </Badge>
+                                        <Badge
+                                            key="React"
+                                            colorScheme="blue"
+                                        >
+                                            React
+                                        </Badge>
+                                    </HStack>
+                                </CardFooter>
+                            </Card>
+                        </Fade>
+                    }
+                    {selected === "Experience #2" && 
                         <Fade bottom>
                             <Card key="Prometheus Group" size="sm">
                                 <CardHeader>
@@ -99,7 +176,7 @@ export default function Experience() {
                                                     as={ChevronRightIcon}
                                                     color="blue.400"
                                                 />
-                                                Leveraged TypeScript and React to build the web-based Planning & Scheduling module of the Prometheus Platform, which is an Enterprise Asset Management tool used by over 50,000 people across our client base
+                                                Successfully completed diverse Jira tickets in an Agile development cycle, contributing to both the frontend and backend stacks, thereby enhancing product functionality according to client needs
                                             </ListItem>
                                             <ListItem key="Point 1">
                                                 <ListIcon
@@ -137,7 +214,7 @@ export default function Experience() {
                             </Card>
                         </Fade>
                     }
-                    {selected === "Experience #2" && 
+                    {selected === "Experience #3" && 
                         <Fade bottom>
                             <Card key="Time's Arrow" size="sm">
                                 <CardHeader>
@@ -214,7 +291,7 @@ export default function Experience() {
                             </Card>
                         </Fade>
                     }
-                    {selected === "Experience #3" && 
+                    {selected === "Experience #4" && 
                         <Fade bottom>
                             <Card key="The Coding School" size="sm">
                                 <CardHeader>
