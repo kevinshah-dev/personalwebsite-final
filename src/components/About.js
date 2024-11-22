@@ -27,7 +27,7 @@ export default function() {
                         <Divider orientation="horizontal"/> 
                     </Stack>
                     <Text color={"gray.400"} fontSize={"xl"} px={4}>
-                        Hi I'm Kevin! I'm a software engineer with a lifelong interest in writing code, developing interesting applications, and making the world a better place with technology.
+                        Hi I'm Kevin. I like making cool software.
                     </Text>
                     <Text color={"gray.400"} fontSize={"xl"} px={4}>
                      Scroll down to see some of the places I've worked and projects I've developed!
