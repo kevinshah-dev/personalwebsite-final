@@ -110,28 +110,28 @@ return (
                     </Fade>
                     <Fade bottom>
                         <Card
-                            key="Multimedia Hub"
+                            key="Historcle"
                             direction={{
                                 base: "column",
                             }}
                             overflow="hidden"
                         >
-                            <Image objectFit="cover" src='https://i.imgur.com/iKP25xh.png'/>
+                            <Image objectFit="cover" src='https://i.imgur.com/TPBRS55.png'/>
                             <Stack>
                                 <CardBody align = "left">
-                                    <Heading size="md">Multimedia Hub</Heading>
+                                    <Heading size="md">Historcle</Heading>
 
                                     <Text py={2}>
-                                        Multimedia Hub is a website that allows users to browse Movies and TV Shows that are currently trending. Additionally, users can see aggregate ratings, cast members, and trailers. This website was built with the help of the TMDB API. 
+                                        Developed an interactive web-based game inspired by Wordle, where players have six attempts to guess the year of a historical event based on an image and caption. Implemented daily challenges automatically updating every 24 hours, featuring new events. 
                                     
                                     </Text>
                                     <HStack py={2}>
-                                        <a key="Github" href="https://github.com/kevinshah-dev/multimediahub">
+                                        <a key="Github" href="https://github.com/kevinshah-dev/historcle-website">
                                             <Button color="blue.400">
                                                 Github
                                             </Button>
                                         </a>
-                                        <a key="Link" href="https://multimediahub.netlify.app/">
+                                        <a key="Link" href="https://historcle-website.vercel.app/">
                                             <Button color="blue.400">
                                                 Website Link
                                             </Button>
@@ -154,13 +154,19 @@ return (
                                             key="API"
                                             colorScheme="blue"                                        
                                         >
-                                            API
+                                            TypeScript
                                         </Badge>
                                         <Badge
                                             key="MaterialUI"
                                             colorScheme="blue"                                        
                                         >
-                                            MaterialUI
+                                            TailwindCSS
+                                        </Badge>
+                                        <Badge
+                                            key="MaterialUI"
+                                            colorScheme="blue"                                        
+                                        >
+                                            Next.js
                                         </Badge>
                                     </HStack>
                                 </CardBody>
