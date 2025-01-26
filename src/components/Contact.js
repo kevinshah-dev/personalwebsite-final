@@ -1,29 +1,37 @@
 import {
-    Divider,
-    Stack,
-    Text,
-    Container,
-    Box,
-    HStack,
-    Heading,
-    Center,
+  Divider,
+  Stack,
+  Text,
+  Container,
+  Box,
+  HStack,
+  Heading,
+  Center,
 } from "@chakra-ui/react";
-import { FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
-    const linkedin = () => {
-        window.open("https://www.linkedin.com/in/ks539/", "_blank", "noreferrer,noopener");
-    };
-    const github = () => {
-        window.open("https://github.com/kevinshah-dev", "_blank", "noreferrer,noopener");
-    };
-    const email = () => {
-        window.open("shahkevinh@gmail.com", "_blank", "noreferrer,noopener");
-    }
+  const linkedin = () => {
+    window.open(
+      "https://www.linkedin.com/in/ks539/",
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const github = () => {
+    window.open(
+      "https://github.com/kevinshah-dev",
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const email = () => {
+    window.open("shahkevinh@gmail.com", "_blank", "noreferrer,noopener");
+  };
 
-    return (
-        <>
-        <Container maxW={"3xl"} id="contact">
+  return (
+    <>
+      <Container maxW={"3xl"} id="contact">
         <Stack
           as={Box}
           textAlign={"center"}
@@ -42,7 +50,7 @@ export default function Contact() {
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
             <Text color={"blue.500"} fontWeight={600} fontSize={"lg"} px={4}>
-              shahkevinh@gmail.com
+              kevinhshah3@gmail.com
             </Text>
             <Center>
               <HStack pt={4} spacing={4}>
@@ -54,12 +62,6 @@ export default function Contact() {
           </Stack>
         </Stack>
       </Container>
-        
-        
-        </>
-    )
+    </>
+  );
 }
-
-
-
-
